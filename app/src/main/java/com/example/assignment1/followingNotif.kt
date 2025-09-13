@@ -1,33 +1,23 @@
 package com.example.assignment1
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class requests : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class followingNotif : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_requests)
+
 
         val btn=findViewById<ImageView>(R.id.buttonhome)
         val btn2=findViewById<ImageView>(R.id.buttonsearch)
         val btn3=findViewById<ImageView>(R.id.buttonpost)
         val btn4=findViewById<ImageView>(R.id.buttonprofile)
-        val btn5=findViewById<LinearLayout>(R.id.followingbutton)
-
-        btn5.setOnClickListener {
-
-            val intent=Intent(this, followingNotif::class.java)
-            startActivity(intent)
-        }
 
         btn.setOnClickListener {
 
@@ -52,7 +42,5 @@ class requests : AppCompatActivity() {
             val intent= Intent(this, profile::class.java)
             startActivity(intent)
         }
-
-
     }
 }
