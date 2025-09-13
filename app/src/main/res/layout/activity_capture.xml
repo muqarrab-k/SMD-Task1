@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ten" />
+
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/next_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/capture_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/left_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/left_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/left_icon1"
+                android:layout_marginStart="30dp"
+
+                />
+
+            <FrameLayout
+                android:id="@+id/capture_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/transparentcircle" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/whitecircle" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/right_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/right_icon2"
+                android:layout_marginEnd="30dp" />
+
+            <ImageView
+                android:id="@+id/right_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="110dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/opensans"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIVE"
+                    android:fontFamily="@font/opensans"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NORMAL"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOOMERANG"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUPERZOOM"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REWIND"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HANDS-FREE"
+                    android:textColor="#6F494B"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="30dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

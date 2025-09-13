@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".message">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="mickeyy__ "
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#905F64"
+
+
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/img_6"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/img_7"
+        android:layout_alignParentStart="true"
+
+        />
+
+
+    <FrameLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#EFEFEF">
+
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:backgroundTint="@drawable/searchbar"
+            android:drawableStart="@drawable/img_51"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            android:textColorHint="#666666"
+            android:singleLine="true" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/search"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/seven"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#d3d5d9"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/seven"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FAFAFA"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="joshusa__"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! How are you my man"
+                android:textSize="15sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2min"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/plum_camera" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/first"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/three"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#d3d5d9"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/three"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FAFAFA"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="milo"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello!"
+                android:textSize="15sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 min"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/plum_camera" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/second"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ten"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#d3d5d9"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/ten"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FAFAFA"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kathyy"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AYSHAAA!"
+                android:textSize="15sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 days ago"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/plum_camera" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fourth"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/third"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/twelve"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#d3d5d9"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/twelve"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FAFAFA"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hally__"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COngratssss"
+                android:textSize="15sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days ago"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/plum_camera" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/camera_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/plum_camera"/>
+
+        <TextView
+            android:id="@+id/camera_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Camera"
+            android:fontFamily="@font/opensans"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
