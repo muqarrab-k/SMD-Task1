@@ -25,6 +25,8 @@
                 android:layout_marginTop="30dp">
 
                 <ImageView
+                    android:id="@+id/lastbackbutton"
+                    android:clickable="true"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/img_32" />
@@ -309,6 +311,7 @@
                     android:layout_marginBottom="8dp">
 
                     <TextView
+                        android:id="@+id/followbutton"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_weight="1"
@@ -376,6 +379,8 @@
                     android:layout_margin="8dp">
 
                     <FrameLayout
+                        android:id="@+id/strangerHighlight"
+                        android:clickable="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp">
 
@@ -495,23 +500,16 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp">
 
-
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/img_57"
+                            android:src="@drawable/plus"
                             app:civ_border_width="2dp"
-                            app:civ_border_color="#d3d5d9"/>
+                            app:civ_border_color="#d3d5d9" />
 
 
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="76dp"
-                            android:layout_height="76dp"
-                            android:src="@drawable/img_57"
-                            app:civ_border_width="3dp"
-                            app:civ_border_color="#FAFAFA"
-                            android:layout_gravity="center"/>
                     </FrameLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -690,37 +688,47 @@
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/homebutton"
             android:layout_width="0dp"
             android:layout_height="25dp"
+            android:clickable="true"
             android:layout_weight="1"
             android:src="@drawable/home"
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/searchbutton"
             android:layout_width="0dp"
             android:layout_height="25dp"
+            android:clickable="true"
             android:layout_weight="1"
             android:src="@drawable/search"
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/postbutton"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:layout_weight="1"
+            android:clickable="true"
             android:src="@drawable/press"
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/notifbutton"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:layout_weight="1"
+            android:clickable="true"
             android:src="@drawable/plumheart"
             android:layout_gravity="center"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilebutton"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:layout_weight="1"
+            android:clickable="true"
             android:src="@drawable/pfp"
             app:civ_border_width="2dp"
             app:civ_border_color="#000000"

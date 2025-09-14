@@ -17,7 +17,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_margin="16dp"
-        android:src="@drawable/camera"
+        android:src="@drawable/settings"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
@@ -26,79 +26,89 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_margin="16dp"
-        android:src="@drawable/camera"
+        android:src="@drawable/img_61"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/capture_controls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:background="@android:color/black">
+        android:paddingBottom="60dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="12dp">
+        <ImageView
+            android:id="@+id/left_icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/one"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true" />
 
-            <ImageView
-                android:id="@+id/left_icon1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/camera"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="40dp"
-                android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/left_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/flash"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/left_icon1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp" />
 
-            <ImageView
-                android:id="@+id/left_icon2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/camera"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/left_icon1"
-                android:layout_marginStart="30dp"
-
-                />
-
-            <FrameLayout
-                android:id="@+id/capture_button"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerInParent="true">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/transparentcircle" />
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/whitecircle" />
-            </FrameLayout>
+        <FrameLayout
+            android:layout_marginBottom="80dp"
+            android:id="@+id/capture_button"
+            android:clickable="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true">
 
             <ImageView
-                android:id="@+id/right_icon1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/camera"
-                android:layout_centerVertical="true"
-                android:layout_toStartOf="@id/right_icon2"
-                android:layout_marginEnd="30dp" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/transparentcircle" />
 
             <ImageView
-                android:id="@+id/right_icon2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/camera"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="40dp" />
-        </RelativeLayout>
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/whitecircle" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/right_icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sync"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/right_icon2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:id="@+id/right_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/smiley"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/modes_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        android:padding="12dp">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -110,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginStart="110dp"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="4dp">
 
                 <TextView
                     android:layout_width="wrap_content"

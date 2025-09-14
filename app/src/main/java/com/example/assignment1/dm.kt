@@ -11,12 +11,21 @@ import androidx.core.view.WindowInsetsCompat
 
 class dm : AppCompatActivity() {
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_dm)
 
+
         val btn=findViewById<ImageView>(R.id.callButton)
+
+        val btn2=findViewById<ImageView>(R.id.goback)
+
+        btn2.setOnClickListener {
+
+            finish()
+        }
 
 
         btn.setOnClickListener {

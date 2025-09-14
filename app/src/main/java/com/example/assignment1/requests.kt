@@ -27,6 +27,8 @@ class requests : AppCompatActivity() {
 
             val intent=Intent(this, followingNotif::class.java)
             startActivity(intent)
+            finish()
+
         }
 
         btn.setOnClickListener {

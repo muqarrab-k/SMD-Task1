@@ -1,3 +1,4 @@
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -130,11 +131,10 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:hint="Send message"
-
             android:background="@drawable/storyreplybar"
             android:paddingStart="10dp"
             android:paddingEnd="12dp"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textColorHint="#463436"
             android:drawableStart="@drawable/story_camera"
             android:drawablePadding="10dp" />

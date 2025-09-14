@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/fifteen"
+            android:src="@drawable/ten"
             android:background="@drawable/roundedstory" />
 
         <LinearLayout
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="gursky.studio"
+                android:text="mickey__"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="16sp" />

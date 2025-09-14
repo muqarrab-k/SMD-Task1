@@ -12,9 +12,12 @@ import androidx.core.view.WindowInsetsCompat
 
 class mainPage : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+
         setContentView(R.layout.activity_main_page)
 
         val btn=findViewById<ImageView>(R.id.searchButton)
@@ -29,12 +32,22 @@ class mainPage : AppCompatActivity() {
 
         val btn6=findViewById<FrameLayout>(R.id.friendStory)
 
-        val btn7=findViewById<ImageView>(R.id.directmessage)
 
-        btn7.setOnClickListener {
+        val msgbtn=findViewById<ImageView>(R.id.message_button)
 
-            val intent=Intent(this,message::class.java)
+        val cambtn=findViewById<ImageView>(R.id.camera)
+
+        cambtn.setOnClickListener {
+
+            val intent=Intent(this,capture::class.java)
             startActivity(intent)
+        }
+
+        msgbtn.setOnClickListener {
+
+            val intent=Intent(this, message::class.java)
+            startActivity(intent)
+
         }
 
 
@@ -48,7 +61,7 @@ class mainPage : AppCompatActivity() {
 
         btn5.setOnClickListener {
 
-            val intent=Intent(this, postingStory::class.java)
+            val intent=Intent(this, capture::class.java)
             startActivity(intent)
         }
 

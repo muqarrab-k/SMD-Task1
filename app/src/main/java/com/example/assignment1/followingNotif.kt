@@ -3,6 +3,7 @@ package com.example.assignment1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,11 +14,22 @@ class followingNotif : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        setContentView(R.layout.activity_following_notif)
 
-        val btn=findViewById<ImageView>(R.id.buttonhome)
-        val btn2=findViewById<ImageView>(R.id.buttonsearch)
-        val btn3=findViewById<ImageView>(R.id.buttonpost)
-        val btn4=findViewById<ImageView>(R.id.buttonprofile)
+
+        val btn=findViewById<ImageView>(R.id.buttonhomeicon)
+        val btn2=findViewById<ImageView>(R.id.buttonsearchicon)
+        val btn3=findViewById<ImageView>(R.id.buttonposticon)
+        val btn4=findViewById<ImageView>(R.id.buttonprofileicon)
+        val btn5=findViewById<LinearLayout>(R.id.youbutton)
+
+        btn5.setOnClickListener {
+
+            val intent=Intent(this, requests::class.java)
+            startActivity(intent)
+            finish()
+
+        }
 
         btn.setOnClickListener {
 
